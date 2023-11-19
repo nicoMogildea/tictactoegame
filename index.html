@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8535745612.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>tic-tac-toe.</h1>
+            <i class="fa-solid fa-circle-half-stroke changeColor"></i>
+        </nav>
+        <hr>
+        <div class="main">
+            <div class="main-result">
+                <span class="res-1-player">2</span>
+                <span>-</span>
+                <span class="res-2-player">3</span>
+            </div>
+            <div class="main-board">
+                <div class="row row1">
+                    <div data-o="00"></div>
+                    <div data-o="01"></div>
+                    <div data-o="02"></div>
+                </div>
+                <div class="row row2">
+                    <div data-o="10"></div>
+                    <div data-o="11"></div>
+                    <div data-o="12"></div>
+                </div>
+                <div class="row row3">
+                    <div data-o="20"></div>
+                    <div data-o="21"></div>
+                    <div data-o="22"></div>
+                </div>
+            </div>
+            <div class="main-players">
+                <div>
+                    <h1 class="player1-name">ALI</h1>
+                    <i class="fa-solid fa-x icon"></i>
+                </div>
+                <p class="draw">draw</p>
+                <div>
+                    <h1 class="player2-name">NIC</h1>
+                    <i class="fa-regular fa-circle icon2"></i>
+                </div>
+            </div>
+            <div class="main-switch">
+                <div class="switch-box">
+                    <p class="switch-player">ALI</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="start-names">
+        <h1>Enter the players' names</h1>
+        <div class="playerOne-box">
+            <label for="inputOne">Player One</label>
+            <input type="text" maxlength="3" name="inputOne" id="inputOne">
+        </div>
+        <div class="playerTwo-box">
+            <label for="inputTwo">Player Two</label>
+            <input type="text" maxlength="3" name="inputTwo" id="inputTwo">
+        </div>
+        <button class="startBtn">Start</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
